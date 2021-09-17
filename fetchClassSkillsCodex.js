@@ -26,6 +26,8 @@ async function fetchClassSkillsCodex() {
         
     }
 
+    console.log("Saving Data...")
+
     fs.writeFile("./data/class_skills.json", JSON.stringify(classSkills), function(err) {
         if (err) {
             console.error(err);
@@ -38,5 +40,3 @@ async function fetchClassSkillsCodex() {
 }
 
 fetchClassSkillsCodex()
-
-// main();
