@@ -2,11 +2,13 @@
   "name": "rarity-tools",
   "version": "1.0.0",
   "description": "Cool tools for rarity",
-  "main": "index.js",
   "repository": "https://github.com/rarity-plus/rarity-tools.git",
   "author": "chiuzon <89428507+chiuzon@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
     "ethers": "^5.4.7"
+  },
+  "scripts": {
+      "skils_codex": "node fetchSkillsCodex.js"
   }
 }
