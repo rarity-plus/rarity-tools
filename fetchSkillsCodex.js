@@ -2,9 +2,8 @@ const ethers = require("ethers")
 var fs = require('fs');
 const {SKILLS_CODEX_ABI} = require('./ABI')
 
-async function main() {
+async function fetchSkillsCodex() {
     const provider = new ethers.providers.JsonRpcProvider("https://rpc.ftm.tools/");
-
     const skillsCodexContract = new ethers.Contract("0x67ae39a2Ee91D7258a86CD901B17527e19E493B3", SKILLS_CODEX_ABI, provider)
 
     let skills = {}
@@ -28,13 +27,17 @@ async function main() {
 
     console.log("Saving data...")
 
-    fs.writeFile("./data/skills_codex.json", JSON.stringify(skills), function(err) {
+    fs.writeFile("./data/skills.json", JSON.stringify(skills), function(err) {
         if (err) {
             console.error(err);
         }else{
             console.log("Data saved!")
         }
     });
+
+    return skills
 }
+
+module.exports = {fetchSkillsCodex}
 
 main();

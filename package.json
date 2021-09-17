@@ -9,7 +9,8 @@
     "ethers": "^5.4.7"
   },
   "scripts": {
-      "skills_codex": "node fetchSkillsCodex.js"
+      "skills": "node fetchSkillsCodex.js",
+      "classSkills": "node fetchClassSkillsCodex.js"
   },
   "type": "commonjs"
 }
