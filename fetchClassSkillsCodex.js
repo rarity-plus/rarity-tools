@@ -9,6 +9,8 @@ async function fetchClassSkillsCodex() {
 
     let classSkills = {}
 
+    console.log("Fetching Class Skills Codex...")
+
     for(let i = 1; i <= 11; i++){
         let rawClassSkills = await classSkillsCodexContract.class_skills(i)
         

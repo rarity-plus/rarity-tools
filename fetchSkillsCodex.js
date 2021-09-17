@@ -40,4 +40,4 @@ async function fetchSkillsCodex() {
 
 module.exports = {fetchSkillsCodex}
 
-main();
+fetchSkillsCodex();
