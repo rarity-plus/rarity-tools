@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "https://github.com/rarity-plus/rarity-tools.git",
   "author": "chiuzon <89428507+chiuzon@users.noreply.github.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "ethers": "^5.4.7"
+  }
 }
